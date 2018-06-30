@@ -15,6 +15,12 @@
 		7ADFC35020E6A0D000ACC1E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADFC34E20E6A0D000ACC1E5 /* LaunchScreen.storyboard */; };
 		7ADFC35B20E6A0D000ACC1E5 /* HeartRateMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC35A20E6A0D000ACC1E5 /* HeartRateMonitorTests.swift */; };
 		7ADFC36620E6A0D000ACC1E5 /* HeartRateMonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC36520E6A0D000ACC1E5 /* HeartRateMonitorUITests.swift */; };
+		7ADFC37420E6A0FF00ACC1E5 /* BluetoothDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC37320E6A0FF00ACC1E5 /* BluetoothDelegate.swift */; };
+		7ADFC37620E6B92C00ACC1E5 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC37520E6B92C00ACC1E5 /* Notifications.swift */; };
+		7ADFC37820E6BC1000ACC1E5 /* PeripheralCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC37720E6BC1000ACC1E5 /* PeripheralCell.swift */; };
+		7ADFC37A20E6C4F600ACC1E5 /* PeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC37920E6C4F600ACC1E5 /* PeripheralViewController.swift */; };
+		7ADFC37C20E6C7A600ACC1E5 /* PeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC37B20E6C7A600ACC1E5 /* PeripheralDelegate.swift */; };
+		7ADFC38020E6D56F00ACC1E5 /* BluetoothUUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC37F20E6D56F00ACC1E5 /* BluetoothUUID.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		7ADFC36120E6A0D000ACC1E5 /* HeartRateMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartRateMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ADFC36520E6A0D000ACC1E5 /* HeartRateMonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateMonitorUITests.swift; sourceTree = "<group>"; };
 		7ADFC36720E6A0D000ACC1E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ADFC37320E6A0FF00ACC1E5 /* BluetoothDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDelegate.swift; sourceTree = "<group>"; };
+		7ADFC37520E6B92C00ACC1E5 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		7ADFC37720E6BC1000ACC1E5 /* PeripheralCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralCell.swift; sourceTree = "<group>"; };
+		7ADFC37920E6C4F600ACC1E5 /* PeripheralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralViewController.swift; sourceTree = "<group>"; };
+		7ADFC37B20E6C7A600ACC1E5 /* PeripheralDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralDelegate.swift; sourceTree = "<group>"; };
+		7ADFC37F20E6D56F00ACC1E5 /* BluetoothUUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothUUID.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +111,13 @@
 		7ADFC34120E6A0CE00ACC1E5 /* HeartRateMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				7ADFC34620E6A0CE00ACC1E5 /* Main.storyboard */,
 				7ADFC34220E6A0CE00ACC1E5 /* AppDelegate.swift */,
 				7ADFC34420E6A0CE00ACC1E5 /* ViewController.swift */,
-				7ADFC34620E6A0CE00ACC1E5 /* Main.storyboard */,
+				7ADFC37920E6C4F600ACC1E5 /* PeripheralViewController.swift */,
+				7ADFC37720E6BC1000ACC1E5 /* PeripheralCell.swift */,
+				7ADFC37E20E6C7BE00ACC1E5 /* Structs */,
+				7ADFC37D20E6C7B100ACC1E5 /* Delegates */,
 				7ADFC34C20E6A0D000ACC1E5 /* Assets.xcassets */,
 				7ADFC34E20E6A0D000ACC1E5 /* LaunchScreen.storyboard */,
 				7ADFC35120E6A0D000ACC1E5 /* Info.plist */,
@@ -126,6 +142,24 @@
 				7ADFC36720E6A0D000ACC1E5 /* Info.plist */,
 			);
 			path = HeartRateMonitorUITests;
+			sourceTree = "<group>";
+		};
+		7ADFC37D20E6C7B100ACC1E5 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				7ADFC37320E6A0FF00ACC1E5 /* BluetoothDelegate.swift */,
+				7ADFC37B20E6C7A600ACC1E5 /* PeripheralDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		7ADFC37E20E6C7BE00ACC1E5 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				7ADFC37520E6B92C00ACC1E5 /* Notifications.swift */,
+				7ADFC37F20E6D56F00ACC1E5 /* BluetoothUUID.swift */,
+			);
+			path = Structs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +293,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ADFC37620E6B92C00ACC1E5 /* Notifications.swift in Sources */,
+				7ADFC37820E6BC1000ACC1E5 /* PeripheralCell.swift in Sources */,
+				7ADFC37C20E6C7A600ACC1E5 /* PeripheralDelegate.swift in Sources */,
 				7ADFC34B20E6A0CE00ACC1E5 /* HeartRateMonitor.xcdatamodeld in Sources */,
+				7ADFC37A20E6C4F600ACC1E5 /* PeripheralViewController.swift in Sources */,
 				7ADFC34520E6A0CE00ACC1E5 /* ViewController.swift in Sources */,
 				7ADFC34320E6A0CE00ACC1E5 /* AppDelegate.swift in Sources */,
+				7ADFC38020E6D56F00ACC1E5 /* BluetoothUUID.swift in Sources */,
+				7ADFC37420E6A0FF00ACC1E5 /* BluetoothDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
