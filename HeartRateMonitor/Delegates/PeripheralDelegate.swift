@@ -70,6 +70,14 @@ extension PeripheralViewController: CBPeripheralDelegate {
         }
     }
     
+    /// Returns the peripheral's battery level as a percent from 0% to 100%
+    func batteryLevel(fromCharacteristic c: CBCharacteristic) -> Int {
+        guard let data = c.value, let byte = data.first else {
+            return -1
+        }
+        return Int(byte)
+    }
+    
     // MARK: CBPeripheralDelegate
     func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
         guard let services = peripheral.services else {
@@ -77,7 +85,7 @@ extension PeripheralViewController: CBPeripheralDelegate {
             return
         }
         for service in services {
-            peripheral.discoverCharacteristics(characteristics, for: service)
+            peripheral.discoverCharacteristics(nil, for: service)
         }
     }
     
@@ -87,6 +95,10 @@ extension PeripheralViewController: CBPeripheralDelegate {
             print("     \(c)")
             if (c.uuid == BluetoothUUID.heartRate) {
                 peripheral.setNotifyValue(true, for: c)
+            } else if (c.uuid == BluetoothUUID.bodyLoc) {
+                peripheral.readValue(for: c)
+            } else if (c.uuid == BluetoothUUID.batteryLevel) {
+                peripheral.readValue(for: c)
             }
         }
     }
@@ -99,6 +111,9 @@ extension PeripheralViewController: CBPeripheralDelegate {
         case BluetoothUUID.bodyLoc:
             let loc = bodyLocation(fromCharacteristic: characteristic)
             print(loc)
+        case BluetoothUUID.batteryLevel:
+            let battery = batteryLevel(fromCharacteristic: characteristic)
+            print("Battery Level: \(battery)")
         default:
             break
         }

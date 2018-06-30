@@ -9,7 +9,9 @@
 import CoreBluetooth
 
 struct BluetoothUUID {
-    static let hrSensor = CBUUID(string: "0x180D")
+    static let hrService = CBUUID(string: "0x180D")
+    static let batteryService = CBUUID(string: "0x180F")
     static let heartRate = CBUUID(string: "2A37")
     static let bodyLoc = CBUUID(string: "2A38")
+    static let batteryLevel = CBUUID(string: "2A19")
 }

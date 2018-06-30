@@ -39,6 +39,7 @@ extension ViewController: CBCentralManagerDelegate {
         print(peripheral)
         perifSet.insert(peripheral)
         self.tableView.reloadData()
+        self.centralManager.stopScan()
     }
     func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
         print("Disconnected from \(peripheral)")

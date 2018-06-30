@@ -25,7 +25,6 @@
 		7ADFC38520E7266100ACC1E5 /* BodyLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC38420E7266100ACC1E5 /* BodyLocation.swift */; };
 		7ADFC38920E728D000ACC1E5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC38820E728D000ACC1E5 /* User.swift */; };
 		7ADFC38B20E72D4E00ACC1E5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC38A20E72D4E00ACC1E5 /* DataManager.swift */; };
-		7ADFC38D20E74BCA00ACC1E5 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADFC38C20E74BCA00ACC1E5 /* Onboarding.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +69,6 @@
 		7ADFC38420E7266100ACC1E5 /* BodyLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyLocation.swift; sourceTree = "<group>"; };
 		7ADFC38820E728D000ACC1E5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7ADFC38A20E72D4E00ACC1E5 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		7ADFC38C20E74BCA00ACC1E5 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +132,6 @@
 				7ADFC34E20E6A0D000ACC1E5 /* LaunchScreen.storyboard */,
 				7ADFC35120E6A0D000ACC1E5 /* Info.plist */,
 				7ADFC34920E6A0CE00ACC1E5 /* HeartRateMonitor.xcdatamodeld */,
-				7ADFC38C20E74BCA00ACC1E5 /* Onboarding.storyboard */,
 			);
 			path = HeartRateMonitor;
 			sourceTree = "<group>";
@@ -300,7 +297,6 @@
 				7ADFC35020E6A0D000ACC1E5 /* LaunchScreen.storyboard in Resources */,
 				7ADFC34D20E6A0D000ACC1E5 /* Assets.xcassets in Resources */,
 				7ADFC34820E6A0CE00ACC1E5 /* Main.storyboard in Resources */,
-				7ADFC38D20E74BCA00ACC1E5 /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

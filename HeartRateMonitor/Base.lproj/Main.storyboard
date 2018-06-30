@@ -53,7 +53,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="31R-cm-6AC"/>
+                    <navigationItem key="navigationItem" id="31R-cm-6AC">
+                        <barButtonItem key="rightBarButtonItem" title="Scan" id="R4U-SD-ss8">
+                            <connections>
+                                <action selector="rescan:" destination="BYZ-38-t0r" id="4Jh-w7-c2E"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="kYq-ec-fIC" id="tLO-ON-rl2"/>
                         <segue destination="qOa-ZC-ahY" kind="showDetail" identifier="selectedPeripheralSegue" id="jPN-Vl-Oto"/>

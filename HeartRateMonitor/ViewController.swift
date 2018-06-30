@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var centralManager:CBCentralManager!
-    let services = [BluetoothUUID.hrSensor]
+    let services = [BluetoothUUID.hrService]
     var perifSet = Set<CBPeripheral>()
     
     override func viewDidLoad() {
@@ -42,6 +42,10 @@ class ViewController: UIViewController {
     
     @objc func connectedToPeripheral() {
         self.performSegue(withIdentifier: "selectedPeripheralSegue", sender: nil)
+    }
+    
+    @IBAction func rescan(_ sender: UIBarButtonItem) {
+        self.centralManager.scanForPeripherals(withServices: services, options: nil)
     }
 }
 
