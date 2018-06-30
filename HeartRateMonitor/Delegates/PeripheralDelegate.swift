@@ -46,27 +46,27 @@ extension PeripheralViewController: CBPeripheralDelegate {
     }
     
     /// Returns a String Description of the sensors body location
-    func bodyLocation(fromCharacteristic c: CBCharacteristic) -> String {
+    func bodyLocation(fromCharacteristic c: CBCharacteristic) -> BodyLocation {
         guard let data = c.value, let byte = data.first else {
-            return "Error"
+            return .unknown
         }
         switch byte {
         case 0:
-            return "Other"
+            return .other
         case 1:
-            return "Chest"
+            return .chest
         case 2:
-            return "Wrist"
+            return .wrist
         case 3:
-            return "Finger"
+            return .finger
         case 4:
-            return "Hand"
+            return .hand
         case 5:
-            return "Ear Lobe"
+            return .ear
         case 6:
-            return "Foot"
+            return .foot
         default:
-            return "Reserved for future use"
+            return .reserved
         }
     }
     

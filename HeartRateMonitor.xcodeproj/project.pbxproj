@@ -22,6 +22,7 @@
 		7ADFC37C20E6C7A600ACC1E5 /* PeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC37B20E6C7A600ACC1E5 /* PeripheralDelegate.swift */; };
 		7ADFC38020E6D56F00ACC1E5 /* BluetoothUUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC37F20E6D56F00ACC1E5 /* BluetoothUUID.swift */; };
 		7ADFC38320E724CB00ACC1E5 /* ContactStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC38220E724CB00ACC1E5 /* ContactStatus.swift */; };
+		7ADFC38520E7266100ACC1E5 /* BodyLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC38420E7266100ACC1E5 /* BodyLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		7ADFC37B20E6C7A600ACC1E5 /* PeripheralDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralDelegate.swift; sourceTree = "<group>"; };
 		7ADFC37F20E6D56F00ACC1E5 /* BluetoothUUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothUUID.swift; sourceTree = "<group>"; };
 		7ADFC38220E724CB00ACC1E5 /* ContactStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactStatus.swift; sourceTree = "<group>"; };
+		7ADFC38420E7266100ACC1E5 /* BodyLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				7ADFC38220E724CB00ACC1E5 /* ContactStatus.swift */,
+				7ADFC38420E7266100ACC1E5 /* BodyLocation.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				7ADFC37820E6BC1000ACC1E5 /* PeripheralCell.swift in Sources */,
 				7ADFC37C20E6C7A600ACC1E5 /* PeripheralDelegate.swift in Sources */,
 				7ADFC34B20E6A0CE00ACC1E5 /* HeartRateMonitor.xcdatamodeld in Sources */,
+				7ADFC38520E7266100ACC1E5 /* BodyLocation.swift in Sources */,
 				7ADFC37A20E6C4F600ACC1E5 /* PeripheralViewController.swift in Sources */,
 				7ADFC34520E6A0CE00ACC1E5 /* ViewController.swift in Sources */,
 				7ADFC34320E6A0CE00ACC1E5 /* AppDelegate.swift in Sources */,
