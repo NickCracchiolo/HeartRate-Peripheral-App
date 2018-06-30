@@ -87,15 +87,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="100%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89u-c3-9YY">
+                                <rect key="frame" x="271" y="20" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monitor is disconnected from chest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xn1-cT-Pia">
+                                <rect key="frame" x="16" y="214" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="89u-c3-9YY" firstAttribute="top" secondItem="lA9-qM-mN2" secondAttribute="top" id="ECM-e2-dtC"/>
+                            <constraint firstItem="xn1-cT-Pia" firstAttribute="leading" secondItem="lA9-qM-mN2" secondAttribute="leading" constant="16" id="Qp3-Vu-8gQ"/>
                             <constraint firstItem="Tlm-cq-OJJ" firstAttribute="centerX" secondItem="lA9-qM-mN2" secondAttribute="centerX" id="Z6G-0g-HpJ"/>
+                            <constraint firstItem="lA9-qM-mN2" firstAttribute="trailing" secondItem="xn1-cT-Pia" secondAttribute="trailing" constant="16" id="ZBC-Og-HVo"/>
+                            <constraint firstItem="lA9-qM-mN2" firstAttribute="trailing" secondItem="89u-c3-9YY" secondAttribute="trailing" constant="16" id="eJd-Pw-J29"/>
                             <constraint firstItem="Tlm-cq-OJJ" firstAttribute="top" secondItem="lA9-qM-mN2" secondAttribute="top" constant="36" id="wdx-51-8GK"/>
+                            <constraint firstItem="xn1-cT-Pia" firstAttribute="top" secondItem="Tlm-cq-OJJ" secondAttribute="bottom" constant="8" id="zuH-MA-QYQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lA9-qM-mN2"/>
                     </view>
                     <connections>
+                        <outlet property="batteryLabel" destination="89u-c3-9YY" id="5nr-x2-bJ3"/>
+                        <outlet property="connectionLabel" destination="xn1-cT-Pia" id="e3j-hE-zea"/>
                         <outlet property="heartRateLabel" destination="Tlm-cq-OJJ" id="xtM-zX-haK"/>
                     </connections>
                 </viewController>

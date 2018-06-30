@@ -110,10 +110,11 @@ extension PeripheralViewController: CBPeripheralDelegate {
            self.heartRateLabel.text = "\(hr)"
         case BluetoothUUID.bodyLoc:
             let loc = bodyLocation(fromCharacteristic: characteristic)
-            print(loc)
+            self.connectionLabel.text = "Monitor is connected to the \(loc.description())"
         case BluetoothUUID.batteryLevel:
             let battery = batteryLevel(fromCharacteristic: characteristic)
             print("Battery Level: \(battery)")
+            self.batteryLabel.text = "\(battery)%"
         default:
             break
         }

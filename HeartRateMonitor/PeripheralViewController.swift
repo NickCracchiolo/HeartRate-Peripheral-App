@@ -11,6 +11,8 @@ import CoreBluetooth
 
 class PeripheralViewController: UIViewController {
     @IBOutlet weak var heartRateLabel: UILabel!
+    @IBOutlet weak var batteryLabel: UILabel!
+    @IBOutlet weak var connectionLabel: UILabel!
     
     let characteristics:[CBUUID] = [BluetoothUUID.heartRate, BluetoothUUID.bodyLoc]
     var peripheral:CBPeripheral!
