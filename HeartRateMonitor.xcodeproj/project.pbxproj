@@ -23,6 +23,9 @@
 		7ADFC38020E6D56F00ACC1E5 /* BluetoothUUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC37F20E6D56F00ACC1E5 /* BluetoothUUID.swift */; };
 		7ADFC38320E724CB00ACC1E5 /* ContactStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC38220E724CB00ACC1E5 /* ContactStatus.swift */; };
 		7ADFC38520E7266100ACC1E5 /* BodyLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC38420E7266100ACC1E5 /* BodyLocation.swift */; };
+		7ADFC38920E728D000ACC1E5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC38820E728D000ACC1E5 /* User.swift */; };
+		7ADFC38B20E72D4E00ACC1E5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC38A20E72D4E00ACC1E5 /* DataManager.swift */; };
+		7ADFC38D20E74BCA00ACC1E5 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADFC38C20E74BCA00ACC1E5 /* Onboarding.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		7ADFC37F20E6D56F00ACC1E5 /* BluetoothUUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothUUID.swift; sourceTree = "<group>"; };
 		7ADFC38220E724CB00ACC1E5 /* ContactStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactStatus.swift; sourceTree = "<group>"; };
 		7ADFC38420E7266100ACC1E5 /* BodyLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyLocation.swift; sourceTree = "<group>"; };
+		7ADFC38820E728D000ACC1E5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7ADFC38A20E72D4E00ACC1E5 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		7ADFC38C20E74BCA00ACC1E5 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,10 +129,12 @@
 				7ADFC37E20E6C7BE00ACC1E5 /* Structs */,
 				7ADFC37D20E6C7B100ACC1E5 /* Delegates */,
 				7ADFC38120E724A700ACC1E5 /* Enums */,
+				7ADFC38720E7288000ACC1E5 /* Local Storage */,
 				7ADFC34C20E6A0D000ACC1E5 /* Assets.xcassets */,
 				7ADFC34E20E6A0D000ACC1E5 /* LaunchScreen.storyboard */,
 				7ADFC35120E6A0D000ACC1E5 /* Info.plist */,
 				7ADFC34920E6A0CE00ACC1E5 /* HeartRateMonitor.xcdatamodeld */,
+				7ADFC38C20E74BCA00ACC1E5 /* Onboarding.storyboard */,
 			);
 			path = HeartRateMonitor;
 			sourceTree = "<group>";
@@ -174,6 +182,15 @@
 				7ADFC38420E7266100ACC1E5 /* BodyLocation.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		7ADFC38720E7288000ACC1E5 /* Local Storage */ = {
+			isa = PBXGroup;
+			children = (
+				7ADFC38820E728D000ACC1E5 /* User.swift */,
+				7ADFC38A20E72D4E00ACC1E5 /* DataManager.swift */,
+			);
+			path = "Local Storage";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +300,7 @@
 				7ADFC35020E6A0D000ACC1E5 /* LaunchScreen.storyboard in Resources */,
 				7ADFC34D20E6A0D000ACC1E5 /* Assets.xcassets in Resources */,
 				7ADFC34820E6A0CE00ACC1E5 /* Main.storyboard in Resources */,
+				7ADFC38D20E74BCA00ACC1E5 /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,8 +333,10 @@
 				7ADFC38520E7266100ACC1E5 /* BodyLocation.swift in Sources */,
 				7ADFC37A20E6C4F600ACC1E5 /* PeripheralViewController.swift in Sources */,
 				7ADFC34520E6A0CE00ACC1E5 /* ViewController.swift in Sources */,
+				7ADFC38920E728D000ACC1E5 /* User.swift in Sources */,
 				7ADFC34320E6A0CE00ACC1E5 /* AppDelegate.swift in Sources */,
 				7ADFC38020E6D56F00ACC1E5 /* BluetoothUUID.swift in Sources */,
+				7ADFC38B20E72D4E00ACC1E5 /* DataManager.swift in Sources */,
 				7ADFC37420E6A0FF00ACC1E5 /* BluetoothDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
