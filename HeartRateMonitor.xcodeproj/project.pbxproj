@@ -21,6 +21,7 @@
 		7ADFC37A20E6C4F600ACC1E5 /* PeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC37920E6C4F600ACC1E5 /* PeripheralViewController.swift */; };
 		7ADFC37C20E6C7A600ACC1E5 /* PeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC37B20E6C7A600ACC1E5 /* PeripheralDelegate.swift */; };
 		7ADFC38020E6D56F00ACC1E5 /* BluetoothUUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC37F20E6D56F00ACC1E5 /* BluetoothUUID.swift */; };
+		7ADFC38320E724CB00ACC1E5 /* ContactStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFC38220E724CB00ACC1E5 /* ContactStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		7ADFC37920E6C4F600ACC1E5 /* PeripheralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralViewController.swift; sourceTree = "<group>"; };
 		7ADFC37B20E6C7A600ACC1E5 /* PeripheralDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralDelegate.swift; sourceTree = "<group>"; };
 		7ADFC37F20E6D56F00ACC1E5 /* BluetoothUUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothUUID.swift; sourceTree = "<group>"; };
+		7ADFC38220E724CB00ACC1E5 /* ContactStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				7ADFC37720E6BC1000ACC1E5 /* PeripheralCell.swift */,
 				7ADFC37E20E6C7BE00ACC1E5 /* Structs */,
 				7ADFC37D20E6C7B100ACC1E5 /* Delegates */,
+				7ADFC38120E724A700ACC1E5 /* Enums */,
 				7ADFC34C20E6A0D000ACC1E5 /* Assets.xcassets */,
 				7ADFC34E20E6A0D000ACC1E5 /* LaunchScreen.storyboard */,
 				7ADFC35120E6A0D000ACC1E5 /* Info.plist */,
@@ -160,6 +163,14 @@
 				7ADFC37F20E6D56F00ACC1E5 /* BluetoothUUID.swift */,
 			);
 			path = Structs;
+			sourceTree = "<group>";
+		};
+		7ADFC38120E724A700ACC1E5 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				7ADFC38220E724CB00ACC1E5 /* ContactStatus.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ADFC38320E724CB00ACC1E5 /* ContactStatus.swift in Sources */,
 				7ADFC37620E6B92C00ACC1E5 /* Notifications.swift in Sources */,
 				7ADFC37820E6BC1000ACC1E5 /* PeripheralCell.swift in Sources */,
 				7ADFC37C20E6C7A600ACC1E5 /* PeripheralDelegate.swift in Sources */,

@@ -28,8 +28,25 @@ extension PeripheralViewController: CBPeripheralDelegate {
         }
     }
     
-    //Returns a String Description of the sensors body location
-    private func bodyLocation(fromCharacteristic c: CBCharacteristic) -> String {
+    /// Parses the Sensor Contactr Status if the HR Monitor supports it
+    func sensorContactStatus(fromCharacteristic c:CBCharacteristic) -> ContactStatus {
+        guard let data = c.value else { return .notSupported }
+        let bytes = [UInt8](data)
+        
+        let format = bytes[0] & 0x02
+        
+        switch format {
+        case 2:
+            return .notDetected
+        case 3:
+            return .detected
+        default:
+            return .notSupported
+        }
+    }
+    
+    /// Returns a String Description of the sensors body location
+    func bodyLocation(fromCharacteristic c: CBCharacteristic) -> String {
         guard let data = c.value, let byte = data.first else {
             return "Error"
         }
